@@ -15,17 +15,17 @@ class Game:
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont("Arial", 40, bold=True)
 
-        self.background = pygame.image.load("background.png").convert()
+        self.background = pygame.image.load("../Images/background.png").convert()
         self.background = pygame.transform.scale(self.background, (self.dimX, self.dimY))
 
-        self.ground = pygame.image.load("sol.png").convert_alpha()
+        self.ground = pygame.image.load("../Images/sol.png").convert_alpha()
         self.posA = self.dimY - 300  
 
-        self.player_img = pygame.image.load("perso.png").convert_alpha()
+        self.player_img = pygame.image.load("../Images/perso.png").convert_alpha()
         self.player_img = pygame.transform.scale(self.player_img, (self.taille_cube, self.taille_cube))
         self.player_mask = pygame.mask.from_surface(self.player_img)
 
-        self.obstacle_img = pygame.image.load("obj.png").convert_alpha()
+        self.obstacle_img = pygame.image.load("../Images/obj.png").convert_alpha()
         self.obstacle_img = pygame.transform.scale(self.obstacle_img, (self.taille_obstacle, self.taille_obstacle))
         self.obstacle_mask = pygame.mask.from_surface(self.obstacle_img)
 

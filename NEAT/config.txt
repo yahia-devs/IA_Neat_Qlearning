@@ -7,13 +7,13 @@ no_fitness_termination   = False
 
 [DefaultGenome]
 # ---- ARCHITECTURE ----
-num_inputs               = 5
+num_inputs               = 6
 num_outputs              = 1
 num_hidden               = 0
 feed_forward             = True
 initial_connection       = full
 
-# ---- STRUCTURAL MUTATION (OBLIGATOIRE) ----
+# ---- STRUCTURAL MUTATION  ----
 single_structural_mutation = False
 structural_mutation_surer  = default
 
@@ -65,7 +65,7 @@ weight_mutate_power      = 0.8
 weight_mutate_rate       = 0.8
 weight_replace_rate      = 0.1
 
-# ---- ENABLE/DISABLE CONNECTIONS (OBLIGATOIRE) ----
+# ---- ENABLE/DISABLE CONNECTIONS  ----
 enabled_default          = True
 enabled_mutate_rate      = 0.01
 enabled_rate_to_true_add  = 0.0

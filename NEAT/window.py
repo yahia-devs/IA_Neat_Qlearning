@@ -13,19 +13,19 @@ pygame.display.set_caption("Mon jeu Pygame")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 40, bold=True)
 
-background = pygame.image.load("background.png").convert()
+background = pygame.image.load("../Images/background.png").convert()
 background = pygame.transform.scale(background, (dimX, dimY))
 
-ground = pygame.image.load("sol.png").convert_alpha()
+ground = pygame.image.load("../Images/sol.png").convert_alpha()
 
 ground_height = dimY - 300                
 posA = ground_height                     
 
-player_img = pygame.image.load("perso.png").convert_alpha()
+player_img = pygame.image.load("../Images/perso.png").convert_alpha()
 player_img = pygame.transform.scale(player_img, (taille_cube, taille_cube))
 player_mask = pygame.mask.from_surface(player_img)   
 
-obstacle_img = pygame.image.load("obj.png").convert_alpha()
+obstacle_img = pygame.image.load("../Images/obj.png").convert_alpha()
 obstacle_img = pygame.transform.scale(obstacle_img, (taille_obstacle, taille_obstacle))
 obstacle_mask = pygame.mask.from_surface(obstacle_img)
 
